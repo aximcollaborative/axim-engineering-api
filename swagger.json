@@ -1,0 +1,65 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Engineering API",
+    "description": "A set of APIs used by the tCRIL engineering team",
+    "version": "1.0.0"
+  },
+  "host": "tcril-engineering-api.herokuapp.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/slack/ask-in-forum": {
+      "post": {
+        "tags": [
+          "Slack Commands"
+        ],
+        "description": "Returns a message suggesting the user use the forums.",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Return a message to be sent to the channel.",
+            "schema": {
+              "$ref": "#/definitions/SlackCommandResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Error404": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Not found."
+        }
+      }
+    },
+    "SlackCommandResponse": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "responseType": {
+            "type": "string",
+            "example": "in_channel"
+          },
+          "text": {
+            "type": "string",
+            "example": "This messages goes in the channel"
+          }
+        }
+      }
+    }
+  }
+}
