@@ -1,0 +1,23 @@
+{
+  "name": "engineering-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-dev --notify=false server.js",
+    "swagger-autogen": "node swagger.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "node-dev": "^7.2.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.19.0"
+  }
+}

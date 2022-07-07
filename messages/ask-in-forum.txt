@@ -1,0 +1,20 @@
+[
+  {
+    "username": "jdoe",
+    "name": "John Doe",
+    "birthdate": "1975-08-19",
+    "uuid": "d42eaa43-7ef8-47bd-a560-e4f301c24285"
+  },
+  {
+    "username": "foobs",
+    "name": "Caroline Donata",
+    "birthdate": "1998-03-04",
+    "uuid": "10d832db-04d5-4296-a0f4-3d9412a0484e"
+  },
+  {
+    "username": "gorn",
+    "name": "Meriadoc Took",
+    "birthdate": "1988-09-23",
+    "uuid": "f8dd74ce-ab96-48f8-a9bf-fa9796adecc6"
+  }
+]
