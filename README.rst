@@ -1,4 +1,4 @@
-tcril-engineering-api
+axim-engineering-api
 #####################
 
-A set of APIs used by the tCRIL engineering team.
+A set of APIs used by the Axim engineering team.
